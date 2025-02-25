@@ -82,7 +82,7 @@ button {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 53px;
 }
 .what-trick__title {
   max-width: 570px;
@@ -98,7 +98,7 @@ button {
   line-height: 48px;
   color: #1d1d1d;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .what-trick__title h2 {
     font-size: 24px;
   }
@@ -119,4 +119,47 @@ button {
 .what-trick__inner {
   display: flex;
   flex-direction: column;
+}
+.what-trick__inner-top {
+  display: flex;
+  gap: 37px;
+}
+.what-trick__inner-top span {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #438aff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: clamp(20px, 3vw, 24px);
+  line-height: 33.6px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .what-trick__title p {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+.what-trick__inner-text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.what-trick__inner-text h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: clamp(16px, 3vw, 24px);
+  line-height: 24px;
+  color: #1d1d1d;
+  letter-spacing: -0.02em;
+}
+@media (max-width: 768px) {
+  .what-trick__inner-text h3 {
+    font-size: 16px;
+    line-height: 16px;
+  }
 }
