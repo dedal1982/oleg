@@ -140,30 +140,34 @@ button {
 .what-trick__inner {
   display: flex;
   flex-direction: column;
+}
+.what-trick__item {
+  display: flex;
+  flex-direction: column;
   gap: 17px;
 }
-.what-trick__inner-top {
+.what-trick__item-top {
   display: flex;
   align-items: flex-start;
   gap: 37px;
 }
 @media (max-width: 1024px) {
-  .what-trick__inner-top {
+  .what-trick__item-top {
     flex-direction: column;
     gap: 16px;
   }
 }
 @media (max-width: 767px) {
-  .what-trick__inner-top {
+  .what-trick__item-top {
     gap: 8px;
   }
 }
-.what-trick__inner-top img {
+.what-trick__item-top img {
   width: 36px;
   height: 36px;
 }
 @media (max-width: 767px) {
-  .what-trick__inner-top img {
+  .what-trick__item-top img {
     width: 28px;
     height: 28px;
   }
@@ -218,7 +222,7 @@ button {
     letter-spacing: 0;
   }
 }
-.what-trick__inner-bottom {
+.what-trick__item-bottom {
   display: flex;
   align-items: center;
   gap: 22px;
@@ -229,28 +233,28 @@ button {
   padding: 19px 24px;
 }
 @media (max-width: 768px) {
-  .what-trick__inner-bottom {
+  .what-trick__item-bottom {
     border-radius: 10px;
   }
 }
 @media (max-width: 767px) {
-  .what-trick__inner-bottom {
+  .what-trick__item-bottom {
     align-items: flex-start;
     padding: 21px 12px;
     gap: 12px;
   }
 }
-.what-trick__inner-bottom img {
+.what-trick__item-bottom img {
   width: 27px;
   height: 34px;
 }
 @media (max-width: 767px) {
-  .what-trick__inner-bottom img {
+  .what-trick__item-bottom img {
     width: 16px;
     height: 20px;
   }
 }
-.what-trick__inner-bottom p {
+.what-trick__item-bottom p {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: clamp(12px, 3vw, 14px);
@@ -259,11 +263,23 @@ button {
   letter-spacing: -0.01em;
 }
 @media (max-width: 767px) {
-  .what-trick__inner-bottom p {
+  .what-trick__item-bottom p {
     font-size: 12px;
     line-height: 16.8px;
   }
-  .what-trick__inner-bottom p br {
+  .what-trick__item-bottom p br {
     display: none;
+  }
+}
+.what-trick__separator {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border: none;
+  border-top: 1px solid #438aff;
+}
+@media (max-width: 767px) {
+  .what-trick__separator {
+    margin-top: 24px;
+    margin-bottom: 24px;
   }
 }
