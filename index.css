@@ -334,11 +334,12 @@ button {
 @media (max-width: 960px) {
   .f-advantages__results {
     padding: 60px 20px;
+    border-radius: 10px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .f-advantages__results {
-    border-radius: 10px;
+    border-radius: 0;
   }
 }
 .f-advantages__results h2 {
@@ -430,20 +431,22 @@ button {
 .f-advantages__try {
   background: linear-gradient(90deg, #565aff 0.02%, #36abff 100%);
   border-radius: 20px;
-  padding: 74px 30px 74px 70px;
+  padding: 74px 70px 74px 70px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 32px;
 }
 @media (max-width: 960px) {
   .f-advantages__try {
     padding: 60px 20px;
+    border-radius: 10px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .f-advantages__try {
-    border-radius: 10px;
+    border-radius: 0;
+    gap: 30px;
   }
 }
 .f-advantages__try h2 {
@@ -458,5 +461,36 @@ button {
   .f-advantages__try h2 {
     font-size: 28px;
     line-height: 28px;
+  }
+}
+.f-advantages__try-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+@media (max-width: 768px) {
+  .f-advantages__try-item {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+.f-advantages__try-item img {
+  width: 27px;
+  height: 34px;
+  object-fit: contain;
+}
+.f-advantages__try-item p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: clamp(14px, 3vw, 16px);
+  line-height: 22.4px;
+  color: #ffffff;
+}
+@media (max-width: 767px) {
+  .f-advantages__try-item p {
+    font-size: 14px;
+    line-height: 19.6px;
+    letter-spacing: 0;
   }
 }
