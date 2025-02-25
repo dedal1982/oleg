@@ -172,12 +172,6 @@ button {
     height: 28px;
   }
 }
-/* @media (max-width: 768px) {
-  .what-trick__title p {
-    font-size: 20px;
-    line-height: 28px;
-  }
-} */
 .what-trick__inner-text {
   display: flex;
   flex-direction: column;
@@ -431,5 +425,24 @@ button {
     font-size: 14px;
     line-height: 19.6px;
     letter-spacing: 0;
+  }
+}
+.f-advantages__try {
+  background: linear-gradient(90deg, #565aff 0.02%, #36abff 100%);
+  border-radius: 20px;
+  padding: 64px 30px 64px 70px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+@media (max-width: 960px) {
+  .f-advantages__try {
+    padding: 60px 20px;
+  }
+}
+@media (max-width: 768px) {
+  .f-advantages__try {
+    border-radius: 10px;
   }
 }
