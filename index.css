@@ -333,3 +333,14 @@ button {
     letter-spacing: -0.02em;
   }
 }
+.f-advantages__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(auto, 1fr));
+  gap: 40px 57px;
+}
+.f-advantages__grid-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
