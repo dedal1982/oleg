@@ -309,4 +309,27 @@ button {
 .f-advantages__results {
   background: #f8f9fb;
   border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 64px 49px 64px 73px;
+  box-sizing: border-box;
+}
+@media (max-width: 768px) {
+  .f-advantages__results {
+    border-radius: 10px;
+  }
+}
+.f-advantages__results h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: clamp(24px, 3vw, 40px);
+  line-height: 48px;
+  color: #1d1d1d;
+}
+@media (max-width: 768px) {
+  .f-advantages__results h2 {
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+  }
 }
