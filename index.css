@@ -35,28 +35,28 @@ button {
   -moz-text-size-adjust: 100%;
   margin: 0 auto;
 }
-.n-container {
-  max-width: 1440px;
+.f-container {
+  max-width: 1280px;
   width: 100%;
   margin: 0 auto;
-  padding-left: 120px;
-  padding-right: 120px;
+  padding-left: 210px;
+  padding-right: 210px;
   box-sizing: border-box;
 }
-@media (max-width: 1410px) {
-  .n-container {
+/* @media (max-width: 1410px) {
+  .f-container {
     padding-left: 75px;
     padding-right: 75px;
     box-sizing: border-box;
   }
 }
 @media (max-width: 1240px) {
-  .n-container {
+  .f-container {
     padding-left: 20px;
     padding-right: 20px;
     box-sizing: border-box;
   }
-}
+} */
 .n-button {
   display: flex;
   align-items: center;
@@ -70,4 +70,27 @@ button {
   background: linear-gradient(90deg, #545aff 0%, #38a7ff 100%);
   box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.15);
 }
-/*op-promo*/
+/*what-trick*/
+.what-trick {
+  width: 100%;
+  background: #ffffff;
+}
+.what-trick__wrapper {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+.what-trick__title {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.what-trick__title h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: clamp(24px, 3vw, 40px);
+  line-height: 48px;
+  color: #1d1d1d;
+}
