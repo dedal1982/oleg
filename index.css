@@ -288,6 +288,28 @@ button {
   width: 100%;
   background: #ffffff;
 }
+.f-advantages__container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 210px;
+  padding-right: 210px;
+  box-sizing: border-box;
+}
+@media (max-width: 1240px) {
+  .f-advantages__container {
+    padding-left: 75px;
+    padding-right: 75px;
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 768px) {
+  .f-advantages__container {
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing: border-box;
+  }
+}
 .f-advantages__wrapper {
   padding-bottom: 100px;
   box-sizing: border-box;
@@ -312,8 +334,13 @@ button {
   display: flex;
   flex-direction: column;
   gap: 28px;
-  padding: 64px 49px 64px 73px;
+  padding: 64px 30px 64px 70px;
   box-sizing: border-box;
+}
+@media (max-width: 960px) {
+  .f-advantages__results {
+    padding: 60px 20px;
+  }
 }
 @media (max-width: 768px) {
   .f-advantages__results {
@@ -340,7 +367,6 @@ button {
   gap: 40px;
 }
 .f-advantages__grid-item {
-  max-width: 373px;
   display: flex;
   flex-direction: column;
 }
