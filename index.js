@@ -1,4 +1,10 @@
 const phoneInput = document.getElementById("phone");
+const submitBtn = document.getElementById("submitBtn");
+
+function validatePhoneNumber(phoneNumber) {
+  const phoneRegex = /^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$/;
+  return phoneRegex.test(phoneNumber);
+}
 
 phoneInput.addEventListener("input", function (e) {
   let value = e.target.value.replace(/\D/g, "");
@@ -21,6 +27,8 @@ phoneInput.addEventListener("input", function (e) {
   }
 
   e.target.value = formattedValue;
+
+  submitBtn.disabled = !validatePhoneNumber(formattedValue);
 });
 
 phoneInput.addEventListener("keydown", function (e) {
@@ -41,3 +49,5 @@ phoneInput.addEventListener("keydown", function (e) {
     e.preventDefault();
   }
 });
+
+submitBtn.disabled = true;
